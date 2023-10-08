@@ -13,7 +13,7 @@ public class Main {
         var context = new ClassPathXmlApplicationContext("application.xml");
 //      clazz -> String -> Map<String, Object>
 //        System.out.println(context.getBean(ConnectionPool.class));
-        var connectionPool = context.getBean("pool2", ConnectionPool.class);
+        var connectionPool = context.getBean("p1", ConnectionPool.class);
         System.out.println(connectionPool);
 
     }
