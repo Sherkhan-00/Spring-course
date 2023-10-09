@@ -16,5 +16,8 @@ public class Main {
         var connectionPool = context.getBean("p1", ConnectionPool.class);
         System.out.println(connectionPool);
 
+        var companyRepository = context.getBean("companyRepository", CompanyRepository.class);
+        System.out.println(companyRepository);
+
     }
 }
