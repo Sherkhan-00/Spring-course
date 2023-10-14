@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        var context = new ClassPathXmlApplicationContext("application.xml");
+        try (var context = new ClassPathXmlApplicationContext("application.xml")) {
 //      clazz -> String -> Map<String, Object>
 //        System.out.println(context.getBean(ConnectionPool.class));
         var connectionPool = context.getBean("p1", ConnectionPool.class);
@@ -19,5 +19,6 @@ public class Main {
         var companyRepository = context.getBean("companyRepository", CompanyRepository.class);
         System.out.println(companyRepository);
 
+        }
     }
 }
