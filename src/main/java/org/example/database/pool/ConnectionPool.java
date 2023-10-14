@@ -1,5 +1,7 @@
 package org.example.database.pool;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.InitializingBean;
 
 import java.util.List;
@@ -22,6 +24,7 @@ public class ConnectionPool implements InitializingBean {
         this.properties = properties;
     }
 
+    @PostConstruct
     private void init() {
         System.out.println("Init connection pool");
     }
@@ -31,6 +34,7 @@ public class ConnectionPool implements InitializingBean {
         System.out.println("Properties set");
     }
 
+    @PreDestroy
     private void destroy() {
         System.out.println("Clean connection pool");
     }
