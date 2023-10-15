@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.database.pool.ConnectionPool;
 import org.example.database.repository.CompanyRepository;
+import org.example.database.repository.CrudRepository;
 import org.example.database.repository.UserRepository;
 import org.example.ioc.Container;
 import org.example.service.UserService;
@@ -24,7 +25,7 @@ public class Main {
         var connectionPool = context.getBean("p1", ConnectionPool.class);
         System.out.println(connectionPool);
 
-        var companyRepository = context.getBean("companyRepository", CompanyRepository.class);
+        var companyRepository = context.getBean("companyRepository", CrudRepository.class);
         System.out.println(companyRepository);
 
         }
