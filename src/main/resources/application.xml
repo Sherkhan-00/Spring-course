@@ -45,8 +45,8 @@
     </bean>
 
 
-    <bean id="companyRepository" class="org.example.database.repository.CompanyRepository">
+    <bean id="companyRepository" class="org.example.spring.database.repository.CompanyRepository">
     </bean>
-    <!--    <bean id="pool2" name="p4" class="org.example.database.pool.ConnectionPool"/>-->
+    <!--    <bean id="pool2" name="p4" class="org.example.spring.database.pool.ConnectionPool"/>-->
 
 </beans>

@@ -1,18 +1,16 @@
-package org.example.config;
+package org.example.spring.config;
 
-import org.example.database.repository.CrudRepository;
-import org.springframework.context.annotation.ComponentScan;
+import org.example.spring.database.repository.CrudRepository;
+import org.example.web.config.WebConfiguration;
+import org.springframework.context.annotation.*;
 import org.springframework.context.annotation.ComponentScan.Filter;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-import java.awt.*;
-
+//@ImportResource("classpath:application.xml")
+@Import(WebConfiguration.class)
 @Configuration
 @PropertySource("classpath:application.properties")
-@ComponentScan(basePackages = "org.example",
+@ComponentScan(basePackages = "org.example.spring",
         useDefaultFilters = false,
         includeFilters = {
         @Filter(type = FilterType.ANNOTATION, value = Component.class),

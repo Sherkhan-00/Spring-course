@@ -1,6 +1,6 @@
-package org.example.database.repository;
+package org.example.spring.database.repository;
 
-import org.example.database.pool.ConnectionPool;
+import org.example.spring.database.pool.ConnectionPool;
 import org.springframework.stereotype.Repository;
 
 @Repository

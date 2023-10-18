@@ -1,18 +1,13 @@
-package org.example.database.repository;
+package org.example.spring.database.repository;
 
 import jakarta.annotation.PostConstruct;
-import jakarta.annotation.Resource;
-import org.example.bpp.Auditing;
-import org.example.bpp.InjectBean;
-import org.example.bpp.Transaction;
-import org.example.database.entity.Company;
-import org.example.database.pool.ConnectionPool;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.example.spring.bpp.Auditing;
+import org.example.spring.bpp.Transaction;
+import org.example.spring.database.entity.Company;
+import org.example.spring.database.pool.ConnectionPool;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
-import java.lang.annotation.Retention;
 import java.util.List;
 import java.util.Optional;
 

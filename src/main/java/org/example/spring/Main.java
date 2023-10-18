@@ -1,16 +1,10 @@
-package org.example;
+package org.example.spring;
 
-import org.example.config.ApplicationConfiguration;
-import org.example.database.pool.ConnectionPool;
-import org.example.database.repository.CompanyRepository;
-import org.example.database.repository.CrudRepository;
-import org.example.database.repository.UserRepository;
-import org.example.ioc.Container;
-import org.example.service.UserService;
+import org.example.spring.config.ApplicationConfiguration;
+import org.example.spring.database.pool.ConnectionPool;
+import org.example.spring.database.repository.CrudRepository;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.Serializable;
 
