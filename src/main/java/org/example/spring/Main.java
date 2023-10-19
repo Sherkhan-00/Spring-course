@@ -3,6 +3,7 @@ package org.example.spring;
 import org.example.spring.config.ApplicationConfiguration;
 import org.example.spring.database.pool.ConnectionPool;
 import org.example.spring.database.repository.CrudRepository;
+import org.example.spring.service.CompanyService;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -25,8 +26,8 @@ public class Main {
         var connectionPool = context.getBean("pool1", ConnectionPool.class);
         System.out.println(connectionPool);
 
-        var companyRepository = context.getBean("companyRepository", CrudRepository.class);
-        System.out.println(companyRepository);
+        var companyService = context.getBean(CompanyService.class);
+        System.out.println(companyService.findById(1));
 
         }
     }
