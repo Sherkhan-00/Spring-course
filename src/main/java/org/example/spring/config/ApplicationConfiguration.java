@@ -33,6 +33,8 @@ public class ApplicationConfiguration {
                 return new ConnectionPool("test-pool", 25);
         }
         @Bean
+        @Profile("prod|web")
+//      ! & |
         public UserRepository userRepository2(ConnectionPool pool2){
                 return new UserRepository(pool2);
         }

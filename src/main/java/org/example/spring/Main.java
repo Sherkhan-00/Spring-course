@@ -16,7 +16,10 @@ public class Main {
         System.out.println(BeanFactoryPostProcessor.class.isAssignableFrom(value.getClass()));
         System.out.println(Serializable.class.isAssignableFrom(value.getClass()));
 
-        try (var context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class)) {
+        try (var context = new AnnotationConfigApplicationContext()) {
+            context.register(ApplicationConfiguration.class);
+            context.getEnvironment().setActiveProfiles("web", "prod");
+            context.refresh();
 //      clazz -> String -> Map<String, Object>
 //        System.out.println(context.getBean(ConnectionPool.class));
         var connectionPool = context.getBean("pool1", ConnectionPool.class);
