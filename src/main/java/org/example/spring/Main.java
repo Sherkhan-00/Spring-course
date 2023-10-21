@@ -26,7 +26,7 @@ public class Main {
         var connectionPool = context.getBean("pool1", ConnectionPool.class);
         System.out.println(connectionPool);
 
-        var companyService = context.getBean(CompanyService.class);
+        var companyService = context.getBean(CompanyService.class) ;
         System.out.println(companyService.findById(1));
 
         }
