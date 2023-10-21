@@ -12,14 +12,6 @@ import org.springframework.stereotype.Component;
 
 @Import(WebConfiguration.class)
 @Configuration(proxyBeanMethods = true)
-@PropertySource("classpath:application.properties")
-@ComponentScan(basePackages = "org.example.spring",
-        useDefaultFilters = false,
-        includeFilters = {
-        @Filter(type = FilterType.ANNOTATION, value = Component.class),
-        @Filter(type = FilterType.ASSIGNABLE_TYPE, value = CrudRepository.class),
-        @Filter(type = FilterType.REGEX, pattern = "com\\..+Repository"),
-        })
 public class ApplicationConfiguration {
 
         @Bean("pool2")
