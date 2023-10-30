@@ -1,14 +1,11 @@
 package org.example.spring.config;
 
 import org.example.spring.database.pool.ConnectionPool;
-import org.example.spring.database.repository.CrudRepository;
 import org.example.spring.database.repository.UserRepository;
 import org.example.web.config.WebConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.*;
-import org.springframework.context.annotation.ComponentScan.Filter;
-import org.springframework.stereotype.Component;
 
 @Import(WebConfiguration.class)
 @Configuration(proxyBeanMethods = true)
