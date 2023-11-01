@@ -1,0 +1,6 @@
+2023-11-01T18:51:52.411+06:00  INFO 13392 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
+2023-11-01T18:51:52.415+06:00  INFO 13392 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
+2023-11-01T18:51:52.416+06:00  INFO 13392 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
+2023-11-01T18:51:52.488+06:00  INFO 13392 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
+2023-11-01T18:51:52.490+06:00  INFO 13392 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
+2023-11-01T18:51:52.490+06:00  INFO 13392 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool

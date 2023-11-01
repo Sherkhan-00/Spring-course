@@ -24,3 +24,6 @@ logging:
   level:
     root: warn
     org.example.spring.database.pool: info
+  file:
+    name: Starter.log
+    path: /
