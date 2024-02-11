@@ -1,6 +1,25 @@
-2023-11-01T18:51:52.411+06:00  INFO 13392 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
-2023-11-01T18:51:52.415+06:00  INFO 13392 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
-2023-11-01T18:51:52.416+06:00  INFO 13392 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
-2023-11-01T18:51:52.488+06:00  INFO 13392 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
-2023-11-01T18:51:52.490+06:00  INFO 13392 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
-2023-11-01T18:51:52.490+06:00  INFO 13392 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
+2024-02-11T23:14:24.541+06:00  INFO 7408 --- [main] org.example.spring.Main                  : Starting Main using Java 17.0.9 with PID 7408 (C:\Users\Sherkhan\Новая папка\Project\Spring-course\build\classes\java\main started by Sherkhan in C:\Users\Sherkhan\Новая папка\Project\Spring-course)
+2024-02-11T23:14:24.550+06:00  INFO 7408 --- [main] org.example.spring.Main                  : The following 1 profile is active: "qa"
+2024-02-11T23:14:24.913+06:00  INFO 7408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-11T23:14:24.939+06:00  INFO 7408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2024-02-11T23:14:25.225+06:00  INFO 7408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-11T23:14:25.367+06:00  INFO 7408 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c29fe36
+2024-02-11T23:14:25.368+06:00  INFO 7408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-11T23:14:25.420+06:00  INFO 7408 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-11T23:14:25.481+06:00  INFO 7408 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-02-11T23:14:25.484+06:00  INFO 7408 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-02-11T23:14:25.789+06:00  INFO 7408 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-11T23:14:26.115+06:00  INFO 7408 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-11T23:14:26.119+06:00  INFO 7408 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-11T23:14:26.125+06:00  INFO 7408 --- [main] o.e.spring.config.JpaConfiguration       : Jpa configuration is enable
+2024-02-11T23:14:26.131+06:00  INFO 7408 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
+2024-02-11T23:14:26.133+06:00  INFO 7408 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
+2024-02-11T23:14:26.134+06:00  INFO 7408 --- [main] o.e.spring.database.pool.ConnectionPool  : Init connection pool
+2024-02-11T23:14:26.135+06:00  INFO 7408 --- [main] o.e.s.d.repository.CompanyRepository     : Init Company repository
+2024-02-11T23:14:26.289+06:00  INFO 7408 --- [main] org.example.spring.Main                  : Started Main in 2.197 seconds (process running for 2.843)
+2024-02-11T23:14:26.297+06:00  INFO 7408 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
+2024-02-11T23:14:26.298+06:00  INFO 7408 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
+2024-02-11T23:14:26.298+06:00  INFO 7408 --- [SpringApplicationShutdownHook] o.e.spring.database.pool.ConnectionPool  : Clean connection pool
+2024-02-11T23:14:26.298+06:00  INFO 7408 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-11T23:14:26.300+06:00  INFO 7408 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-11T23:14:26.305+06:00  INFO 7408 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
